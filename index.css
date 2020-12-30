@@ -33,3 +33,68 @@ h1 {
   background: url(home.png) 50% 50% no-repeat;
   background-size: contain;
 }
+
+.snowball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0;
+
+  animation: snowRain 2s ease-in-out infinite;
+
+  box-shadow: 0 0 5px 3px rgba(255, 255, 255, .75);
+}
+
+.snowball-1 {
+  left: 100px;
+  animation-delay: -.3s;
+}
+
+.snowball-2 {
+  left: 120px;
+  animation-delay: .2s;
+}
+
+.snowball-3 {
+  left: 140px;
+  animation-delay: -.5s;
+}
+
+.snowball-4 {
+  left: 160px;
+  animation-delay: .8s;
+}
+
+.snowball-5 {
+  left: 180px;
+  animation-delay: .3s;
+}
+
+.snowball-6 {
+  left: 200px;
+  animation-delay: .7s;
+}
+
+@keyframes snowRain {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 200px;
+  }
+}
